@@ -61,19 +61,4 @@ function callApi(email){
 	    }
 	}
 	http.send(params);
-
-	// var xhttp = new XMLHttpRequest();
- //    xhttp.onreadystatechange = function() {
- //         if (this.readyState == 4 && this.status == 200) {
- //         	// let api_resp =  document.getElementById('api-response');
- //         	// api_resp.className += '';         	
- //         	// api_resp.className += 'api-result api-result-show';         	
- //            cl(this.responseText);
- //            // alert(this.responseText.id)
- //         }
- //    };
- //    xhttp.open("POST", url, true);
- //    xhttp.setRequestHeader("Content-type", "application/json");
- //    xhttp.setRequestHeader("X-ShopId", "sh_9f57832f-456b-44f3-888f-8a370b155a18");
- //    alert(xhttp.send(JSON.stringify(data)));
 }
