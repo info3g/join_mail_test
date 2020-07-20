@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<head>
 		<title>Join Mailing List</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -7,14 +9,17 @@
 	</head>
 	<body>
 		<div class="container">
-			<form name="join_mailing_list">
-				<label for="email"></label>
-				<input type="email" id="email" name="email" autofocus>
-				<span class="error error-hide" id="email_error">Field is required</span>
-				<span class="email_validate error-hide" id="email_validate">please Enter a valid Email Address</span>
-				<button type="button" onclick="submit_form()">Sign up</button>
-			</form>		
-
+			<div class="sign_form">
+				<form name="join_mailing_list">
+					<label for="email">Join the mailing list</label>
+					<div class="form_section">
+						<input type="email" id="email" name="email" placeholder="Your email" autofocus>
+						<span class="error error-hide" id="email_error">Field is required</span>
+						<span class="email_validate error-hide" id="email_validate">Please Enter a valid Email Address</span>
+						<button type="button" onclick="submit_form()">Sign up</button>
+					</div>
+				</form>		
+			</div>
 			<div class="api-result api-result-hide" id="api-response">
 				<p>Request Submitted successfully</p>
 				<h4 id="response"></h4>
