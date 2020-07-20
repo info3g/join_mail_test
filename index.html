@@ -7,9 +7,31 @@
 		<div class="container">
 			<form name="join_mailing_list">
 				<label for="email"></label>
-				<input type="email" id="email" name="email">
-				<button type="button">Sign up</button>
+				<input type="email" id="email" name="email" autofocus>
+				<button type="button" onclick="submit_form()">Sign up</button>
 			</form>		
 		</div>
 	</body>
+	<script type="text/javascript">				
+		var cl = console.log;
+		function ValidateEmail(mail)  {
+		 	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {		 		
+		    	return (true)
+		  	}		    
+		    return (false)
+		}
+		function submit_form(){			
+			let email = document.getElementById("email").value;
+			if(email == ''){
+				alert('This field is required');
+				return document.join_mailing_list.email.focus()
+			}
+			else{
+				ValidateEmail(email)
+			}			
+		}
+
+
+
+	</script>
 </html>
